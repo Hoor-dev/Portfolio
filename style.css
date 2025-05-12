@@ -1,0 +1,794 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body.light{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+   color: rgb(22, 22, 26);
+   font-family: "Open Sans", sans-serif;
+
+} */
+body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 26);
+    color: whitesmoke;
+    font-family: "Open Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+#toggle-lightmode{
+   background-color: transparent;
+   border: none;
+   color: whitesmoke;
+   font-size: 20px;
+   
+
+
+
+  /* float: right; */
+   
+}
+#toggle-lightmode:hover{
+    background-color: transparent;
+    border: none;
+    color: rgb(243, 239, 18);
+    font-size: 20px;
+    
+ 
+ 
+ 
+   /* float: right; */
+    
+ }
+#toggle-darkmode{
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    
+    
+    /* float: right; */
+ 
+
+ }
+ #toggle-darkmode:hover{
+    background-color: transparent;
+    border: none;
+    color: rgba(103, 195, 248, 0.918);
+    font-size: 20px;
+  
+    transition-property: ease;
+    
+    
+    /* float: right; */
+ 
+
+ }
+#shift-mode{
+    margin-right: 3.5%;
+    text-align: right;
+    gap: 2%;
+   
+    margin-top: 1%;
+    display: flex;
+    justify-content: right;
+    right: 56%;
+
+
+}
+
+#nav-bar{
+    
+    display: flex;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-top: 0.5rem;
+    padding-left: 58rem;
+    gap: 25%;
+    margin-right: 1.5rem;
+    
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+
+/* a:hover{
+    transition: transform 2s ease;
+    transform: rotateY(360deg);
+} */
+.nav-li{
+   font-size: 15px;
+}
+#logo{
+    font-size: 30px;
+    padding-left: 3%;
+}
+#image-box{
+   margin-top: 4%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+   
+    overflow: hidden;
+ 
+
+}
+#box1{
+    height: 300px;
+    width: 350px;
+    
+    background-image: url(Screenshot\ \(3\).png);
+    background-size: cover; 
+    background-position: center;
+    animation: bo 2s   ease   ;
+
+
+
+    
+}
+
+@keyframes bo {
+    0% { 
+    scale: 0;}
+    
+     
+    100% { 
+    scale: 1;}
+    
+    
+  }
+    
+    
+    
+
+#box2{
+    height: 400px;
+    width: 350px;   
+    
+    background-image: url(Screenshot\ \(4\).png);
+    background-size: cover;
+    background-position: center;
+    animation: b2 2s ease;
+   animation-delay: 1s;
+}
+@keyframes b2 {
+0%{scale: 0;}
+100%{
+    scale: 1;
+}    
+}
+#box3{
+    height: 500px;
+    width: 350px;
+    
+    background-image: url(Screenshot\ \(8\).png);
+    background-size: cover;
+    background-position: center;
+    animation: b3 2s ease;
+    animation-delay: 2s;
+}
+@keyframes b3 {
+    0%{scale: 0;}
+    100%{
+        scale: 1;
+    }
+}
+/* .imgbox{
+ box-shadow: 0px 4px 8px 0px rgba(245, 243, 243, 0.253),0px 6px 20px 0px rgba(245, 243, 243, 0.199);
+} */
+#intro-mern{
+    font-size: 120px;
+    margin-left: 3%;
+    margin-top: 3%;
+    animation: m 2s  ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+    
+  
+}
+@keyframes m {
+    0%{
+       scale: 0;
+
+    }
+    100%{
+        scale: 1;
+    }
+    
+        0%{ transform: translateX(-100%);}
+        100%{ transform: translateX(-0%);}
+        
+   
+    
+}
+#intro-dev{
+    font-size: 100px;
+    margin-left: 3%;
+    animation: m 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+#intro-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#intro-para{
+    margin-left: 20%;
+    padding: 3.5%;
+    text-align: justify;
+    font-size: 17px;
+    animation: m 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+#open-resume{
+    background-color: transparent;
+    color: whitesmoke;
+    height: 35px;
+    width: 150px;
+    border: 1px solid whitesmoke;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+#open-resume:hover{
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 8px  rgba(245, 243, 243, 0.253) ,0px 6px 20px 0px  rgba(245, 243, 243, 0.253);
+}
+#about-div{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    /* flex-direction: row-reverse; */
+    margin-bottom: 5%;
+    
+    
+}
+#about-para{
+   
+    height: 50px;
+    width: 470px;
+    font-size: 17px;
+    text-align: justify;
+    animation: m 2s ease;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+    
+
+}
+#about-img{
+    background-image: url(https://img.freepik.com/premium-photo/programmer-coding-laptop-night-with-ai-generated_144089-3836.jpg);
+    height: 450px;
+    width: 300px;
+    margin-left: 13%;
+    background-size: cover;
+    background-position: center;
+    animation: m 2s ease;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+#about-heading{
+    font-size: 100px;
+   margin-right:3% ;
+   animation: a 2s ease;
+   animation-timeline: view();
+   animation-range: entry 20% cover 40%;
+
+
+  
+
+
+}
+@keyframes a {
+    0%{
+        scale: 0;
+       
+    }
+    100%{
+        scale: 1;
+       
+    }
+        0%{ transform: translateX(-100%);}
+        100%{ transform: translateX(-0%);}
+        
+    
+    
+}
+.abt{
+    margin-right: 3%;
+}
+#learn-more{
+    background-color: transparent;
+    color: whitesmoke;
+    height: 35px;
+    width: 150px;
+    border: 1px solid whitesmoke;
+    margin-top: 29%;
+    border-radius: 20px;
+}
+#learn-more:hover{
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 8px  rgba(245, 243, 243, 0.253) ,0px 6px 20px 0px  rgba(245, 243, 243, 0.253);
+}
+#service-div{
+    height: 800px;
+    margin-bottom: 15%;
+    margin-top: 3%;
+
+    
+}
+#service-heading{
+    font-size: 100px;
+    width: 50%;
+    margin-left: 3%;
+    animation: s 2s ease;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+@keyframes s {
+    0%{ transform: translateX(-100%);
+    scale: 0;}
+    100%{ transform: translateX(-0%);
+    scale: 1;}
+    
+}
+#ser-div{
+    
+    margin-top: 9%;
+}
+.ser{
+    display: flex;
+    
+    margin: 3%;
+    align-items: center;
+}
+.ser-e{
+    color: rgb(113, 113, 114);
+    width: 40%;
+    margin-left: 3%;
+    
+}
+.ser-h{
+   width: 30%;
+}
+.ser-img{
+    height: 200px;
+    width: 200px;
+}
+#service-1{
+    animation: service 2s ease;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+@keyframes service {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+#service-2{
+    animation: service2 2s ease;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+@keyframes service2 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+#service-3{
+    animation: service3 2s ease;
+    animation-delay: 2s;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+@keyframes service3 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+#service-4{
+    animation: service4 2s ease;
+    animation-delay: 3s;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+@keyframes service4 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.buynow{
+    background-color: transparent;
+    color: whitesmoke;
+    height: 35px;
+    width: 150px;
+    border: 1px solid whitesmoke;
+    margin-left: 3%;
+    border-radius: 20px;
+}
+.buynow:hover{
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 8px  rgba(245, 243, 243, 0.253) ,0px 6px 20px 0px  rgba(245, 243, 243, 0.253);
+}
+hr{
+    background-color: rgb(113, 113, 114);
+    border: none;
+    /* height: 0.5px; */
+}
+#contact-heading{
+    font-size: 100px;
+    text-align: right;
+    margin-right: 13%;
+    animation: c 2s ease;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+@keyframes c {
+    0%{ transform: translateX(-100%);
+    scale: 0;}
+    100%{ transform: translateX(-0%);
+    scale: 1;}
+    
+}
+form{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 5%;
+    height: 450px;
+    margin-left: 3%;
+    font-size: 17px;
+    animation: form 2s ease;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+input{
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 3%;
+    border: none;
+    background-color: rgb(38, 39, 51);
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    
+}
+
+@keyframes form {
+    0%{ transform: translateX(-100%);
+    }
+    100%{ transform: translateX(-0%);
+    }
+    
+}
+#desc{
+    height: 70px;
+}
+#submit{
+    background-color: transparent;
+    color: whitesmoke;
+    height: 35px;
+    width: 150px;
+    border: 1px solid whitesmoke;
+    margin-left: 3%;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-bottom: 15%;
+
+}
+#submit:hover{
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 8px  rgba(245, 243, 243, 0.253) ,0px 6px 20px 0px  rgba(245, 243, 243, 0.253);
+}
+footer{
+    background-color: rgb(38, 39, 51);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: baseline;
+    color: whitesmoke;
+    height: 100px;
+}
+.icon{
+    font-size: 30px;
+   align-items: baseline;
+   margin-top: 13%;
+    
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    #nav-ul{
+        font-size: 15px;
+        padding-left: 60%;
+    }
+    #intro-mern{
+        font-size: 100px;
+        
+    
+    }
+    
+    #box1{
+        height: 200px;
+        width: 250px;
+        border: 1px solid white;
+        }
+    #box2{
+        height: 300px;
+        width: 250px;   
+        border: 1px solid white;
+        }
+    #box3{
+        height: 400px;
+        width: 250px;
+        border: 1px solid white;
+        }
+    #about-div{
+        margin-bottom: 25%;
+    }
+    #service-div{
+        margin-bottom: 20%;
+    }
+        
+    
+    }
+    
+
+
+@media screen and (max-width:768px) {
+    #nav-ul{
+        font-size: 15px;
+        padding-left: 50%;
+    
+    }
+
+    #intro-mern{
+        font-size: 110px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #box1{
+        height: 150px;
+        width: 175px;
+        border: 1px solid white;
+        }
+    #box2{
+        height: 250px;
+        width: 175px;   
+        border: 1px solid white;
+        }
+    #box3{
+        height: 350px;
+        width: 175px;
+        border: 1px solid white;
+        }
+    #intro-div{
+        text-align: center;
+        flex-direction: column;
+    
+        }
+    #intro-para{
+        margin-right: 18%;
+    }
+    #open-resume{
+        margin-left: 32%;
+    }
+    #about-div{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    #about-img{
+        display: none;
+    }
+    #about-heading{
+        width: 100%;
+    }
+
+    
+}
+@media screen and (max-width:425px) {
+    #nav-ul{
+        font-size: 12px;
+        padding-left: 20%;
+        margin-top: 2%;
+    }
+    #image-box{
+        flex-direction: column;
+        margin-left: 25%;
+    }
+    .imgbox{
+        margin: 2%;
+    }
+    #box1{
+        height: 300px;
+        width: 200px;
+        border: 1px solid white;
+      
+        }
+    #box2{
+        height: 200px;
+        width: 200px;   
+        border: 1px solid white;
+        }
+    #box3{
+        height: 4
+        00px;
+        width: 200px;
+        border: 1px solid white;
+        }
+    #intro-mern{
+        font-size: 60px;
+        text-align: center;
+        
+    }
+    #intro-dev{
+        font-size: 60px;
+        text-align: center;
+        
+    }
+    #intro-div{
+        text-align: center;
+        flex-direction: column;
+
+    }
+    #intro-para{
+        text-align: justify;
+        align-items: center;
+        width: 300px;
+    }
+    #open-resume{
+        margin-left: 20%;
+    }
+    #about-div{
+        margin-bottom: 20%;
+        height: 500px;
+    }
+    #about-heading{
+        margin: 3%;
+        font-size: 60px;
+    }
+    #about-para{
+        margin: 3%;
+        width: 300px;
+    }
+    #learn-more{
+        margin-top: 70%;
+    }
+    #service{
+        height: 900px;
+    }
+    .ser{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 13%;
+        align-items: center;
+    }
+    .ser-h{
+        margin: 5%;
+        width: 100%;
+    }
+    .ser-e{
+        margin: 5%; 
+        width: 100%;
+    }
+    #service-heading{
+        font-size: 60px;
+        width: 100%;
+        text-align: center;
+    }
+    #service{
+        height: 1600px;
+    }
+    #contact{
+        margin-top: 100%;
+    }
+    form{
+        text-align: center;
+        width: 100%;
+        
+    }
+    #contact-heading{
+        font-size: 60px;
+    }
+    footer{
+        font-size: 10px;
+        width: 100%;
+        height: 60px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .inp{
+        width: 130px;
+       
+    }
+
+}
+@media screen and (max-width:375px) {
+    #nav-ul{
+        
+        font-size: 12px;
+        padding-left: 10%;
+        margin-top: 2%;
+    }
+    #image-box{
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      
+       
+       
+    }
+    #box1{
+        height: 150px;
+        width: 150px;
+        margin-right: 52%;
+       
+        }
+   
+    #box2{
+        height: 150px;
+        width: 150px;  
+      
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-right: 52%;
+        }
+    #box3{
+        height: 150px;
+        width: 150px;
+        margin-right: 52%;
+        
+}
+#intro-mern{
+    font-size: 50px;
+}
+#intro-dev{
+    font-size: 50px;
+}
+#intro-para{
+   margin-right: 3%;
+   margin-left: 11%;
+}
+}
